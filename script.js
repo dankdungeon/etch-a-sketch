@@ -26,7 +26,7 @@ function populateContainer(num = 4) {
 const button = document.getElementById("button");
 button.addEventListener("click", () => {
   let num = prompt("How many squares per side for the new grid?");
-  if (num < 100) {
+  if (num < 100 && num > 0) {
     populateContainer(num);
   } else return;
 });
